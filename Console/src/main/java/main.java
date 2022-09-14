@@ -2,22 +2,29 @@ import java.util.ArrayList;
 
 public class main {
     public static void main(String[] args) {
+        //Instantiating input arraylist
         ArrayList<Integer> a = new ArrayList<Integer>();
+        //Initializing input arraylist
         for (int i = 0; i < 5; i++) {
             a.add((int) (Math.random()*10));
         }
+        //prints unsorted arraylist
         System.out.println("Input array: ");
         System.out.println(a);
+        //prints bubble sorted arraylist
         System.out.println("Bubble sorted: ");
+        //Calls bubSort() with "a" as input
         System.out.println(bubSort(a));
+        //prints insertion sorted arraylist
         System.out.println("Insertion sorted: ");
+        //Calls insertSort() with "a" as input
         System.out.println(insertSort(a));
     }
 
 
 
 
-
+    //Bubble sort function, requires one Arraylist of Int type and returns a sorted arraylist.
     public static ArrayList<Integer> bubSort(ArrayList in){
         ArrayList<Integer> temp = in;
         int hold;
@@ -39,7 +46,8 @@ public class main {
         }
         return temp;
     }
-    public static ArrayList<Integer> insertSort(ArrayList in){
+    //Insert sort function, requires one Arraylist of Int type and returns a sorted arraylist.
+    public static ArrayList<Integer> insertSort(ArrayList in){x
         ArrayList<Integer> temp = new ArrayList<Integer>();
         return temp;
     }
