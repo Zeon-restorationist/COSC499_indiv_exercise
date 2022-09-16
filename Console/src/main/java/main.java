@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 
 public class main {
+    //Main method
     public static void main(String[] args) {
         ArrayList <Integer> a = new ArrayList<Integer>(){{
             add(3);
