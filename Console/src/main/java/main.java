@@ -1,12 +1,20 @@
 import java.util.ArrayList;
 
 public class main {
-
-
-
-
-
-
+    public static void main(String[] args) {
+        ArrayList <Integer> a = new ArrayList<Integer>(){{
+            add(3);
+            add(2);
+            add(1);
+            add(4);
+        }};
+        System.out.println("Initial array: ");
+        System.out.println(a);
+        System.out.println("bubble sorted: ");
+        System.out.println(bubSort(a));
+        System.out.println("insert sorted: ");
+        System.out.println(insertSort(a));
+    }
     //Bubble sort function, requires one Arraylist of Int type and returns a sorted arraylist.
     public static ArrayList <Integer> bubSort(ArrayList in){
         ArrayList<Integer> temp = in;
@@ -30,7 +38,6 @@ public class main {
         return temp;
     }
     //Insert sort function, requires one Arraylist of Int type and returns a sorted arraylist.
-
     public static ArrayList<Integer> insertSort(ArrayList in){
 
         ArrayList<Integer> temp = in;
@@ -43,8 +50,7 @@ public class main {
 
             // Move elements of arr[0..i-1],
             // that are greater than key, to one
-            // position ahead of their
-            // current position
+            // position ahead of their current position
             while (j >= 0 && temp.get(j) > key)
             {
                 temp.set(j+1, temp.get(j));
